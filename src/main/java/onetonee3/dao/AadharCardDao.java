@@ -65,4 +65,45 @@ public class AadharCardDao {
 	
 	
 	
+	public void deleteAadhar(int id) {
+		EntityManager entityManager=getEntityManager();
+		EntityTransaction entityTransaction=entityManager.getTransaction();
+		AadharCard aadharCard=entityManager.find(AadharCard.class, id);
+		if(aadharCard!=null) {
+//			person id is present
+			entityTransaction.begin();
+			entityManager.remove(aadharCard);
+			entityTransaction.commit();
+		}else {
+			System.out.println("Sorry that id is Not Present");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

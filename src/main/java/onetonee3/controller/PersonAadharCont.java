@@ -41,12 +41,19 @@ public static void main(String[] args) {
 	
 	
 //	UPDATE
-	Person person=new Person();
-	person.setName("poo");
-	person.setAddress("chennai");
+//	Person person=new Person();
+//	person.setName("poo");
+//	person.setAddress("chennai");
+//	
+//	PersonDao personDao=new PersonDao();
+//	personDao.updatePerson(1, person);
+//	
+//	Deelete
+//	AadharCardDao aadharCardDao=new AadharCardDao();
+//	aadharCardDao.deleteAadhar(200);
+	PersonDao  personDao=new PersonDao();
+	personDao.deletePerson(1);
 	
-	PersonDao personDao=new PersonDao();
-	personDao.updatePerson(1, person);
 	
 	
 	
